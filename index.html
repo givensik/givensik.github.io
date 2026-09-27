@@ -1,13 +1,303 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/lab.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Network Generation Network Security Lab</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kim Junsik Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <a href="#home" class="logo">김준식</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="tag">AI Security · Cloud Security · [관심 분야를 입력하세요]</p>
+
+        <h2>안녕하세요. [한 줄 소개를 입력하세요] 김준식입니다.</h2>
+
+        <p>
+          세종대학교 정보보호학과에 재학하며, 차세대 보안 인재 양성 프로그램
+          <strong>Best of the Best (BoB)</strong>의 <strong>AI기업보안트랙</strong>에서
+          교육을 수강하고 있습니다. [본인이 보안을 공부하며 중요하게 생각하는 부분,
+          앞으로의 방향성 등을 2~3문장으로 적어보세요.]
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects">프로젝트 경험 보기</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- 사진이 있으면 아래 div를 <img src="profile.jpg" alt="김준식 프로필 사진"> 로 교체하세요 -->
+        <div class="hero-avatar">준식</div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <p class="about-lead">
+        저는 <strong>[본인의 핵심 관심 분야, 예: AI 기업보안]</strong>과
+        <strong>[두 번째 관심 분야]</strong>를 중심으로 공부하고 있습니다.
+      </p>
+
+      <div class="about-info">
+        <div>
+          <strong>학과</strong>
+          <span>세종대학교 정보보호학과</span>
+        </div>
+
+        <div>
+          <strong>활동</strong>
+          <span>Best of the Best (BoB) AI기업보안트랙 교육 수강중</span>
+        </div>
+
+        <div>
+          <strong>관심분야</strong>
+          <span>[예: AI 보안, 클라우드 보안, 침해대응, 시큐어 코딩 등]</span>
+        </div>
+
+        <div>
+          <strong>주요 경험</strong>
+          <span>[프로젝트/동아리/공모전 등 대표 경험을 간단히 적어보세요]</span>
+        </div>
+
+        <div>
+          <strong>Email</strong>
+          <span>gimjunsig06@gmail.com</span>
+        </div>
+
+        <div>
+          <strong>GitHub</strong>
+          <span>
+            <a href="https://github.com/givensik" target="_blank" rel="noopener noreferrer">
+              github.com/givensik
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div class="about-story">
+        <div class="about-text">
+          <span class="about-badge">[배지 문구, 예: Security Foundation]</span>
+          <h3>[스토리 제목을 입력하세요]</h3>
+          <p>
+            [정보보호학과에서 배운 내용, 보안을 공부하게 된 계기나 관점 등을
+            2~4문장으로 자유롭게 작성하세요.]
+          </p>
+        </div>
+
+        <div class="about-text">
+          <span class="about-badge">[배지 문구, 예: BoB AI기업보안트랙]</span>
+          <h3>[스토리 제목을 입력하세요]</h3>
+          <p>
+            [BoB AI기업보안트랙에서 수강 중인 내용, 진행 중인 프로젝트나
+            목표 등을 2~4문장으로 자유롭게 작성하세요.]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>[분야 1, 예: AI Security]</h3>
+          <p>[이 분야에서 학습/실습한 내용을 한 줄로 설명하세요.]</p>
+          <div class="skill-tags">
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>[분야 2, 예: Cloud / Infra]</h3>
+          <p>[이 분야에서 학습/실습한 내용을 한 줄로 설명하세요.]</p>
+          <div class="skill-tags">
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>[분야 3, 예: Detection & Response]</h3>
+          <p>[이 분야에서 학습/실습한 내용을 한 줄로 설명하세요.]</p>
+          <div class="skill-tags">
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>[분야 4, 예: Development]</h3>
+          <p>[이 분야에서 학습/실습한 내용을 한 줄로 설명하세요.]</p>
+          <div class="skill-tags">
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+            <span>[Skill]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+
+      <p class="projects-guide">
+        Details 버튼을 누르면 각 프로젝트의 상세 설명을 확인할 수 있습니다.
+      </p>
+
+      <div class="project-category">
+        <h3>[카테고리 1, 예: BoB AI기업보안트랙 프로젝트]</h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <span>[프로젝트 대표 이미지 위치]</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">[진행 형태, 예: Team Project · BoB]</p>
+              <h4>[프로젝트 이름을 입력하세요]</h4>
+              <p>
+                [프로젝트에서 무엇을 했는지, 어떤 문제를 해결했는지 2~3문장으로
+                작성하세요.]
+              </p>
+              <p class="project-tech">[사용 기술 · 사용 기술 · 사용 기술]</p>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button type="button" class="detail-btn" data-detail-text="[프로젝트에 대한 더 자세한 설명을 여기에 적어보세요.]">
+                  Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <span>[프로젝트 대표 이미지 위치]</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">[진행 형태]</p>
+              <h4>[프로젝트 이름을 입력하세요]</h4>
+              <p>
+                [프로젝트 설명]
+              </p>
+              <p class="project-tech">[사용 기술]</p>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button type="button" class="detail-btn" data-detail-text="[상세 설명]">
+                  Details
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h3>[카테고리 2, 예: 학과/동아리 프로젝트]</h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <span>[프로젝트 대표 이미지 위치]</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">[진행 형태]</p>
+              <h4>[프로젝트 이름을 입력하세요]</h4>
+              <p>
+                [프로젝트 설명]
+              </p>
+              <p class="project-tech">[사용 기술]</p>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <button type="button" class="detail-btn" data-detail-text="[상세 설명]">
+                  Details
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="detail-modal" id="detailModal" aria-hidden="true">
+    <div class="detail-modal-content">
+      <div class="detail-modal-header">
+        <p class="detail-modal-title" id="detailModalTitle">Project Details</p>
+        <button type="button" class="detail-modal-close" id="detailModalClose" aria-label="닫기">×</button>
+      </div>
+
+      <div class="detail-modal-body">
+        <p id="detailModalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Kim Junsik. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const detailButtons = document.querySelectorAll(".detail-btn");
+    const detailModal = document.getElementById("detailModal");
+    const detailModalText = document.getElementById("detailModalText");
+    const detailModalTitle = document.getElementById("detailModalTitle");
+    const detailModalClose = document.getElementById("detailModalClose");
+
+    detailButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const text = button.dataset.detailText || "";
+        const card = button.closest(".project-card");
+        const title = card.querySelector("h4")?.textContent || "Project Details";
+
+        detailModalText.textContent = text;
+        detailModalTitle.textContent = title;
+
+        detailModal.classList.add("is-open");
+        detailModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeDetailModal() {
+      detailModal.classList.remove("is-open");
+      detailModal.setAttribute("aria-hidden", "true");
+      detailModalText.textContent = "";
+      document.body.style.overflow = "";
+    }
+
+    detailModalClose.addEventListener("click", closeDetailModal);
+
+    detailModal.addEventListener("click", (event) => {
+      if (event.target === detailModal) {
+        closeDetailModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && detailModal.classList.contains("is-open")) {
+        closeDetailModal();
+      }
+    });
+  </script>
+</body>
 </html>
