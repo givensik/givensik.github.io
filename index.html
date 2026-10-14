@@ -112,7 +112,7 @@
         </div>
 
         <div class="about-text">
-          <h3>연구실 활동을 통해 차량 통신 이상탐지를 연구</h3>
+          <h3>학부연구생 활동을 통해 차량 통신 이상탐지를 연구</h3>
           <p>
             세종대 차세대 네트워크 보안 연구실 학부연구생으로 5G/6G 차량
             통신(C-ITS) 환경의 변조 공격 탐지를 연구했고, 논문으로
@@ -176,7 +176,7 @@
           <p class="timeline-date">2025.03 ~ 2025.12</p>
           <div class="timeline-content">
             <h3>세종대 차세대 네트워크 보안 연구실 학부연구생</h3>
-            <p>5G/6G C-ITS 차량 통신 변조 공격 탐지를 연구했고, 2025.09부터는 6G 환경을 위한 연합학습 기반 AI 이상탐지 시스템도 함께 연구했습니다.</p>
+            <p>5G/6G C-ITS 차량 통신 변조 공격 탐지를 연구했고, 2025.09~11에는 6G 환경을 위한 연합학습 기반 이상탐지 실험 환경도 구축했습니다.</p>
           </div>
         </div>
 
@@ -276,7 +276,7 @@
       </p>
 
       <div class="project-category">
-        <h3>BoB 15기 & 산학 프로젝트</h3>
+        <h3>BoB 15기</h3>
 
         <div class="project-grid">
           <article class="project-card">
@@ -284,13 +284,13 @@
               <span>AEGI · Cross-SaaS</span>
             </div>
             <div class="project-content">
-              <p class="project-label">Team Project · BoB 15기 AI기업보안트랙 (진행중)</p>
-              <h4>기업 환경의 Cross-SaaS 위협 분석 프레임워크 (AEGI)</h4>
+              <p class="project-label">팀 프로젝트 · BoB 15기 AI기업보안트랙</p>
+              <h4>기업 환경의 Cross-SaaS 위협 분석 프레임워크 [진행중]</h4>
               <p>
-                GitHub · Slack · Okta · Google Workspace 등 여러 SaaS가 실제로
-                어떻게 연결되어 있는지 객체 단위로 복원·가시화해, 개별 SaaS
-                점검만으로는 보이지 않는 Cross-SaaS 위협을 분석하는 프레임워크를
-                5인 팀(AEGI)으로 개발하고 있습니다.
+                GitHub · Slack · Okta · Google Workspace 등 여러 SaaS가 서로
+                어떻게 연결되어 있는지 객체 단위로 복원하고 시각화하는
+                프레임워크입니다. 개별 SaaS 점검만으로는 보이지 않는 SaaS 간
+                위협을 분석하는 것을 목표로 5인 팀(AEGI)으로 진행하고 있습니다.
               </p>
               <p class="project-tech">GitHub API · Slack API · Okta · Google Workspace · OAuth</p>
 
@@ -301,23 +301,52 @@
               </div>
             </div>
           </article>
+        </div>
+      </div>
+
+      <div class="project-category">
+        <h3>인턴 · 신한은행 정보보호본부</h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <span>Security for AI · RAG</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">팀 프로젝트 · 신한은행 정보보호본부 인턴 (2026.01~02)</p>
+              <h4>Security for AI — RAG 시스템 프롬프트 인젝션 탐지 모델 프로토타입</h4>
+              <p>
+                RAG 시스템에 들어오는 외부 데이터에 섞인 악성 프롬프트(간접
+                프롬프트 인젝션)를 미리 걸러내는 탐지 모델 프로토타입을
+                개발했습니다. 실시간 처리 환경을 고려해 BERT 임베딩과 Logistic
+                Regression 기반의 가벼운 구조로 만들었습니다.
+              </p>
+              <p class="project-tech">Python · BERT 임베딩 · Logistic Regression</p>
+
+              <div class="project-links">
+                <button type="button" class="detail-btn" data-detail-text="현업 인터뷰로 RAG 파이프라인(수집→전처리→임베딩→벡터DB)을 분석해 임베딩 직전 악성 프롬프트 검증 단계 부재를 식별했습니다. ML 4종·DL 1종을 비교한 뒤, 운영 환경(실시간 처리)을 고려해 딥러닝 대신 경량 Logistic Regression + BERT 임베딩 기반 탐지 프로토타입으로 전환했고, AI Hub 금융 뉴스 데이터셋으로 학습시켜 오탐을 줄였습니다. AI 기본법 제32조(안전성 확보 의무) 대응 방안도 도출했습니다. (팀장, 기여도 45%, 본인 포함 3명)">
+                  Details
+                </button>
+              </div>
+            </div>
+          </article>
 
           <article class="project-card">
             <div class="project-image">
-              <span>신한은행 · Security for AI</span>
+              <span>Splunk · 이상행위 탐지</span>
             </div>
             <div class="project-content">
-              <p class="project-label">Internship · 신한은행 정보보호본부 (2026.01~02)</p>
-              <h4>Security for AI — RAG 에이전트 프롬프트 인젝션 방어 & Splunk 이상행위 탐지</h4>
+              <p class="project-label">개인 과제 · 신한은행 정보보호본부 인턴 (2026.01~02)</p>
+              <h4>Splunk 기반 내부자 이상행위 탐지 시나리오 개발</h4>
               <p>
-                RAG 파이프라인에 악성 프롬프트 검증 단계가 없다는 점을 분석해
-                유사도 기반 필터링 솔루션을 팀장으로서 기획·개발했고, Splunk로는
-                제로 트러스트 관점의 내부자 이상행위 탐지 시나리오를 직접 설계했습니다.
+                제로 트러스트 관점에서 내부자의 이상행위를 찾기 위해 서버 로그를
+                바탕으로 탐지 시나리오를 정의했습니다. 시나리오를 Splunk 쿼리로
+                작성해 대시보드에 반영했습니다.
               </p>
-              <p class="project-tech">Logistic Regression · BERT 임베딩 · Splunk · SIEM</p>
+              <p class="project-tech">Splunk · SIEM · 로그 분석</p>
 
               <div class="project-links">
-                <button type="button" class="detail-btn" data-detail-text="현업 인터뷰로 RAG 파이프라인(수집→전처리→임베딩→벡터DB)을 분석해 임베딩 직전 악성 프롬프트 검증 단계 부재를 식별했습니다. ML 4종·DL 1종을 비교한 뒤, 운영 환경(실시간 처리)을 고려해 딥러닝 대신 경량 Logistic Regression + BERT 임베딩 기반 탐지 프로토타입으로 전환했고, AI Hub 금융 뉴스 데이터셋으로 학습시켜 오탐을 줄였습니다. AI 기본법 제32조(안전성 확보 의무) 대응 방안도 도출했습니다. 별도로 서버 로그 기반 Splunk 이상행위 탐지 시나리오를 단독으로 설계하고 대시보드로 구현했습니다. (팀장, 기여도 45%, 본인 포함 3명)">
+                <button type="button" class="detail-btn" data-detail-text="각 서버 로그를 바탕으로 내부자 이상행위 탐지 시나리오를 정의하고, Splunk 쿼리를 작성해 대시보드로 구현했습니다. SIEM 운영과 대시보드 구현을 경험했습니다. (본인 1명, 기여도 100%)">
                   Details
                 </button>
               </div>
@@ -327,44 +356,23 @@
       </div>
 
       <div class="project-category">
-        <h3>연구 & 수상 프로젝트</h3>
+        <h3>학부연구생 · 세종대 차세대 네트워크 보안 연구실</h3>
 
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-image">
-              <span>CLEAR · MCP DLP</span>
-            </div>
-            <div class="project-content">
-              <p class="project-label">Team Project · 캡스톤디자인 최우수상 · 논문 발표 (2026.03~06)</p>
-              <h4>CLEAR — MCP 기반 LLM 에이전트 DLP 게이트웨이</h4>
-              <p>
-                LLM 에이전트가 MCP로 기업 내부 도구를 자율 호출할 때, 여러 도구의
-                반환값이 결합되어 개인이 재식별되는 위협을 정규식·키워드 기반
-                DLP는 막지 못한다는 문제를 동적·계층형 게이트웨이로 해결했습니다.
-              </p>
-              <p class="project-tech">MCP Gateway(stdio·HTTP) · Python · OpenSearch · k-anonymity</p>
-
-              <div class="project-links">
-                <button type="button" class="detail-btn" data-detail-text="MCP Gateway(stdio & HTTP)를 전담 개발해 AI 에이전트와 하위 MCP 서버 사이의 도구 호출을 프록시하고, OARM 분류·워크플로우 DLP 라우팅을 통합했습니다. Gateway·Judge·Filter 모듈에 turn_id/request_id 계층을 설계해 전파하는 분산 감사 로그 파이프라인을 구축해 OpenSearch로 요청 단위 전체 흐름을 추적할 수 있게 했고, 전체 요청 흐름(Input→Agent→Gateway→Matrix→Judge→DLP→R')을 SVG 파이프라인 그래프로 시각화하는 DLP 대시보드도 개발했습니다. Nemotron-Personas-Korea 100만 건 합성 페르소나 데이터셋으로 No Filter/Presidio DLP/CLEAR 3개 조건의 k-익명성을 측정해, 반복 질의로 도구 호출 응답이 누적될수록 재식별 위험이 커지는 결합정보 위협에 대한 방어력을 실증했습니다. 트러블슈팅: (1) 오픈소스 MCP Gateway가 하위 서버 툴 스키마를 파이썬 함수 시그니처로 변환하며 발생한 JSON Schema-Python 식별자 규칙 불일치를 내부/외부 변환 계층 분리로 해결, (2) LLM 검증으로 응답이 길어져 발생한 MCP 클라이언트 타임아웃을 progress notification 전송으로 해결. 성과: 세종대 캡스톤디자인 경진대회 최우수상, 한국정보보호학회 CISC-S'26 논문 발표(정보보호학회장상), Incognito 아이디어톤 본선 진출. (4인 팀, GitHub 저장소는 비공개)">
-                  Details
-                </button>
-              </div>
-            </div>
-          </article>
-
           <article class="project-card">
             <div class="project-image">
               <span>5G/6G C-ITS · CAM 탐지</span>
             </div>
             <div class="project-content">
-              <p class="project-label">Research · 세종대 차세대 네트워크 보안 연구실 (1저자)</p>
-              <h4>5G/6G C-ITS 환경의 차량 수준 평가 기반 CAM 변조 공격 탐지 모델 연구</h4>
+              <p class="project-label">학부연구생 · 정보보호학회논문지 2026년 2월호 (1저자)</p>
+              <h4>5G/6G C-ITS 환경에서의 차량 수준 평가 기반 Prediction-AE CAM 변조 공격 탐지 모델 연구</h4>
               <p>
-                차량이 주기적으로 방송하는 CAM 메시지의 변조 공격을 비지도
-                학습으로 탐지하는 연구로, 서로 다른 무선 기술 간 데이터셋
-                한계를 cross-domain 설계로 극복했습니다.
+                차량이 주기적으로 주고받는 CAM 메시지가 변조되었는지를, 정상
+                주행 데이터만으로 학습한 모델로 탐지하는 연구입니다. 5G 실측
+                데이터로 학습하고 DSRC 시뮬레이션 공격 데이터로 평가해, 서로 다른
+                무선 환경에서도 탐지가 되는지 확인했습니다.
               </p>
-              <p class="project-tech">LSTM AutoEncoder · Cross-domain · V2X</p>
+              <p class="project-tech">Python · LSTM AutoEncoder · V2X</p>
 
               <div class="project-links">
                 <button type="button" class="detail-btn" data-detail-text="5G 환경에는 CAM 변조 공격 데이터셋이 없고 공개 공격 데이터는 DSRC(IEEE 802.11p) 기반뿐이라는 한계를, ETSI CAM 메시지 형식이 무선 기술과 무관하게 동일하다는 점에 착안해 극복했습니다. 5G 실측 정상 데이터(V2AIX)로 학습하고 DSRC 시뮬레이션 공격 데이터(VeReMi Extension)로 평가하는 cross-domain 설정을 설계, 학습 도메인 기준 정규화로 도메인 분포 이동을 최소화했습니다. Prediction-AutoEncoder(2-layer LSTM으로 다음 시점을 예측, 예측 오차를 이상 점수로 사용)로 위치·궤적이 비현실적으로 깨지는 변조 공격을 F1 0.98 이상으로 탐지했습니다. DSRC→5G→6G 전환에도 CAM 표준이 유지되면 탐지 모델을 재학습 없이 이전할 수 있는 가능성을 제시했습니다. 정보보호학회논문지(JKIISC) 2026년 2월호 게재(저자: 김준식, 서예린, 김민규, 김종현), 데이터 전처리·정규화 파이프라인 구축부터 모델 학습·평가까지 1저자로 주도했습니다.">
@@ -379,17 +387,17 @@
               <span>6G · 연합학습 이상탐지</span>
             </div>
             <div class="project-content">
-              <p class="project-label">Research · 세종대 차세대 네트워크 보안 연구실 (2025.09~)</p>
+              <p class="project-label">학부연구생 · 세종대 차세대 네트워크 보안 연구실 (2025.09~11)</p>
               <h4>6G 환경을 위한 연합학습(FL) 기반 AI 이상탐지 시스템 개발</h4>
               <p>
-                open5GS·UERANSIM으로 구성한 5G Core 테스트베드 위에서, 연합학습
-                기반 AI 이상탐지 모델을 실험하기 위한 환경을 구축하고 있습니다.
+                open5GS·UERANSIM으로 5G Core 테스트베드를 구성하고, 연합학습 기반
+                AI 이상탐지 모델을 실험할 수 있는 환경을 구축했습니다.
               </p>
               <p class="project-tech">Python(PyTorch) · Flower · Docker · open5GS · UERANSIM</p>
 
               <div class="project-links">
                 <a href="https://github.com/givensik/Core-Testbed" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <button type="button" class="detail-btn" data-detail-text="5G Core 테스트베드 실험 자동화 구축과 Flower 기반 연합학습(FL) 실험 환경 구성을 맡고 있습니다. 여러 노드가 원본 데이터를 공유하지 않고도 함께 이상탐지 모델을 학습할 수 있는 구조를, 6G로 이어질 차세대 네트워크의 보안 모니터링에 적용하는 것을 목표로 합니다.">
+                <button type="button" class="detail-btn" data-detail-text="5G Core 테스트베드 실험 자동화와 Flower 기반 연합학습(FL) 실험 환경 구성을 맡았습니다. 실험 환경 구축 단계까지 진행했습니다.">
                   Details
                 </button>
               </div>
@@ -404,14 +412,36 @@
         <div class="project-grid">
           <article class="project-card">
             <div class="project-image">
+              <span>CLEAR · MCP DLP</span>
+            </div>
+            <div class="project-content">
+              <p class="project-label">캡스톤디자인 팀 프로젝트 · 세종대 (2026.03~06)</p>
+              <h4>CLEAR — MCP 기반 LLM 에이전트 DLP 게이트웨이</h4>
+              <p>
+                LLM 에이전트가 MCP로 기업 내부 도구를 호출할 때, 여러 도구의
+                응답이 합쳐져 개인이 특정되는 데이터 유출을 막는 게이트웨이입니다.
+                MCP Gateway와 로그 추적 시스템 개발, 전체 모듈 통합을 맡았습니다.
+              </p>
+              <p class="project-tech">MCP Gateway(stdio·HTTP) · Python · OpenSearch · k-anonymity</p>
+
+              <div class="project-links">
+                <button type="button" class="detail-btn" data-detail-text="MCP Gateway(stdio & HTTP)를 전담 개발해 AI 에이전트와 하위 MCP 서버 사이의 도구 호출을 프록시하고, OARM 분류·워크플로우 DLP 라우팅을 통합했습니다. Gateway·Judge·Filter 모듈에 turn_id/request_id 계층을 설계해 전파하는 분산 감사 로그 파이프라인을 구축해 OpenSearch로 요청 단위 전체 흐름을 추적할 수 있게 했고, 전체 요청 흐름(Input→Agent→Gateway→Matrix→Judge→DLP→R')을 SVG 파이프라인 그래프로 시각화하는 DLP 대시보드도 개발했습니다. Nemotron-Personas-Korea 100만 건 합성 페르소나 데이터셋으로 No Filter/Presidio DLP/CLEAR 3개 조건의 k-익명성을 측정해, 반복 질의로 도구 호출 응답이 누적될수록 재식별 위험이 커지는 결합정보 위협에 대한 방어력을 실증했습니다. 트러블슈팅: (1) 오픈소스 MCP Gateway가 하위 서버 툴 스키마를 파이썬 함수 시그니처로 변환하며 발생한 JSON Schema-Python 식별자 규칙 불일치를 내부/외부 변환 계층 분리로 해결, (2) LLM 검증으로 응답이 길어져 발생한 MCP 클라이언트 타임아웃을 progress notification 전송으로 해결. 성과: 세종대 캡스톤디자인 경진대회 최우수상, 한국정보보호학회 CISC-S'26 논문 발표(정보보호학회장상), Incognito 아이디어톤 본선 진출. (4인 팀, GitHub 저장소는 비공개)">
+                  Details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
               <span>S! Community</span>
             </div>
             <div class="project-content">
-              <p class="project-label">Team Project · 정보보호학과 동아리 (2022.06~12)</p>
+              <p class="project-label">동아리 팀 프로젝트 · Security Factorial (2022.06~12)</p>
               <h4>S! 웹 개발 프로젝트 — 정보보호학과 커뮤니티</h4>
               <p>
-                정보보호학과 학생들을 위한 커뮤니티 웹사이트를 팀으로 개발하며,
-                주요 화면 컴포넌트 구현과 OAuth 로그인을 맡았습니다.
+                정보보호학과 학생들을 위한 커뮤니티 웹사이트를 팀으로
+                개발했습니다. 주요 화면 컴포넌트 구현과 OAuth 로그인을 맡았습니다.
               </p>
               <p class="project-tech">React · Node.js · OAuth</p>
 
