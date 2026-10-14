@@ -272,7 +272,7 @@
       <h2>Projects</h2>
 
       <p class="projects-guide">
-        Details 버튼을 누르면 각 프로젝트의 상세 설명을 확인할 수 있습니다.
+        Details 버튼을 누르면 각 프로젝트의 상세 장표나 설명을 확인할 수 있습니다.
       </p>
 
       <div class="project-category">
@@ -310,7 +310,7 @@
         <div class="project-grid">
           <article class="project-card">
             <div class="project-image">
-              <span>Security for AI · RAG</span>
+              <img src="./images/shinhan-rag.png" alt="신한은행 Security for AI 프로젝트 표지">
             </div>
             <div class="project-content">
               <p class="project-label">팀 프로젝트 · 신한은행 정보보호본부 인턴 (2026.01~02)</p>
@@ -324,7 +324,7 @@
               <p class="project-tech">Python · BERT 임베딩 · Logistic Regression</p>
 
               <div class="project-links">
-                <button type="button" class="detail-btn" data-detail-text="현업 인터뷰로 RAG 파이프라인(수집→전처리→임베딩→벡터DB)을 분석해 임베딩 직전 악성 프롬프트 검증 단계 부재를 식별했습니다. ML 4종·DL 1종을 비교한 뒤, 운영 환경(실시간 처리)을 고려해 딥러닝 대신 경량 Logistic Regression + BERT 임베딩 기반 탐지 프로토타입으로 전환했고, AI Hub 금융 뉴스 데이터셋으로 학습시켜 오탐을 줄였습니다. AI 기본법 제32조(안전성 확보 의무) 대응 방안도 도출했습니다. (팀장, 기여도 45%, 본인 포함 3명)">
+                <button type="button" class="detail-btn" data-detail-imgs="./project-details/rag-1.png,./project-details/rag-2.png">
                   Details
                 </button>
               </div>
@@ -333,7 +333,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <span>Splunk · 이상행위 탐지</span>
+              <img src="./images/shinhan-splunk.png" alt="Splunk 탐지 쿼리 화면">
             </div>
             <div class="project-content">
               <p class="project-label">개인 과제 · 신한은행 정보보호본부 인턴 (2026.01~02)</p>
@@ -346,7 +346,7 @@
               <p class="project-tech">Splunk · SIEM · 로그 분석</p>
 
               <div class="project-links">
-                <button type="button" class="detail-btn" data-detail-text="각 서버 로그를 바탕으로 내부자 이상행위 탐지 시나리오를 정의하고, Splunk 쿼리를 작성해 대시보드로 구현했습니다. SIEM 운영과 대시보드 구현을 경험했습니다. (본인 1명, 기여도 100%)">
+                <button type="button" class="detail-btn" data-detail-imgs="./project-details/splunk-1.png">
                   Details
                 </button>
               </div>
@@ -412,7 +412,7 @@
         <div class="project-grid">
           <article class="project-card">
             <div class="project-image">
-              <span>CLEAR · MCP DLP</span>
+              <img src="./images/clear.png" alt="CLEAR DLP 대시보드 화면">
             </div>
             <div class="project-content">
               <p class="project-label">캡스톤디자인 팀 프로젝트 · 세종대 (2026.03~06)</p>
@@ -425,7 +425,7 @@
               <p class="project-tech">MCP Gateway(stdio·HTTP) · Python · OpenSearch · k-anonymity</p>
 
               <div class="project-links">
-                <button type="button" class="detail-btn" data-detail-text="MCP Gateway(stdio & HTTP)를 전담 개발해 AI 에이전트와 하위 MCP 서버 사이의 도구 호출을 프록시하고, OARM 분류·워크플로우 DLP 라우팅을 통합했습니다. Gateway·Judge·Filter 모듈에 turn_id/request_id 계층을 설계해 전파하는 분산 감사 로그 파이프라인을 구축해 OpenSearch로 요청 단위 전체 흐름을 추적할 수 있게 했고, 전체 요청 흐름(Input→Agent→Gateway→Matrix→Judge→DLP→R')을 SVG 파이프라인 그래프로 시각화하는 DLP 대시보드도 개발했습니다. Nemotron-Personas-Korea 100만 건 합성 페르소나 데이터셋으로 No Filter/Presidio DLP/CLEAR 3개 조건의 k-익명성을 측정해, 반복 질의로 도구 호출 응답이 누적될수록 재식별 위험이 커지는 결합정보 위협에 대한 방어력을 실증했습니다. 트러블슈팅: (1) 오픈소스 MCP Gateway가 하위 서버 툴 스키마를 파이썬 함수 시그니처로 변환하며 발생한 JSON Schema-Python 식별자 규칙 불일치를 내부/외부 변환 계층 분리로 해결, (2) LLM 검증으로 응답이 길어져 발생한 MCP 클라이언트 타임아웃을 progress notification 전송으로 해결. 성과: 세종대 캡스톤디자인 경진대회 최우수상, 한국정보보호학회 CISC-S'26 논문 발표(정보보호학회장상), Incognito 아이디어톤 본선 진출. (4인 팀, GitHub 저장소는 비공개)">
+                <button type="button" class="detail-btn" data-detail-imgs="./project-details/clear-1.png,./project-details/clear-2.png,./project-details/clear-3.png,./project-details/clear-4.png">
                   Details
                 </button>
               </div>
@@ -467,6 +467,7 @@
 
       <div class="detail-modal-body">
         <p id="detailModalText"></p>
+        <div id="detailModalImages"></div>
       </div>
     </div>
   </div>
@@ -478,18 +479,27 @@
   <script>
     const detailButtons = document.querySelectorAll(".detail-btn");
     const detailModal = document.getElementById("detailModal");
+    const detailModalContent = detailModal.querySelector(".detail-modal-content");
     const detailModalText = document.getElementById("detailModalText");
+    const detailModalImages = document.getElementById("detailModalImages");
     const detailModalTitle = document.getElementById("detailModalTitle");
     const detailModalClose = document.getElementById("detailModalClose");
 
     detailButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        const text = button.dataset.detailText || "";
         const card = button.closest(".project-card");
         const title = card.querySelector("h4")?.textContent || "Project Details";
+        const images = (button.dataset.detailImgs || "").split(",").filter(Boolean);
 
-        detailModalText.textContent = text;
         detailModalTitle.textContent = title;
+        detailModalText.textContent = images.length ? "" : button.dataset.detailText || "";
+        detailModalImages.replaceChildren(...images.map((src) => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = `${title} 상세 장표`;
+          return img;
+        }));
+        detailModalContent.classList.toggle("has-images", images.length > 0);
 
         detailModal.classList.add("is-open");
         detailModal.setAttribute("aria-hidden", "false");
@@ -501,6 +511,7 @@
       detailModal.classList.remove("is-open");
       detailModal.setAttribute("aria-hidden", "true");
       detailModalText.textContent = "";
+      detailModalImages.replaceChildren();
       document.body.style.overflow = "";
     }
 
